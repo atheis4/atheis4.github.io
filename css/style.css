@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  font-size: 16px;
+  color: white;
+  background-image: url("../img/apollo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  margin: 7.5% 0 0 20%;
+  justify-content: space-around;
+}
+
+.l-col {
+  flex: 1;
+}
+
+.r-col {
+  flex: 4;
+  margin: -15px 0 0 0;
+  background-color: rgba(0,0,0,.5);
+  padding: 0 20px;
+}
+
+#face-pic {
+  border-radius: 100%;
+  width: 75%;
+}
+
+.soc-link {
+  width: 40px;
+}
