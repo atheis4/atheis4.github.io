@@ -3,15 +3,16 @@ $break-medium: 512px;
 $break-large: 768px;
 
 html {
-  font-size: 20px;
   font: 100% $font-stack;
-  color: white;
-  background-image: url("../img/moon_landing_portrait.png");
-  background-color: rgba(0,0,0,.25);
+  background: url('../img/moonprint_land.png');
+  background-color: rgba(0,0,0,0.5);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  @media screen and (min-width: $break-large) {
-    background-image: url("../img/moon_landing.png");
+  @media (min-width: $break-medium) {
+    background-color: red;
+  }
+  @media (min-width: $break-large) {
+    background-color: blue;
   }
 }
 
@@ -24,60 +25,47 @@ a:hover{
   color: white;
 }
 
+p {
+  font-size: 22px;
+}
+
 .content {
-  font-size: 20px;
-  display: flex;
-  width: 100%; 
-  flex-direction: column;
-  background-color: rgba(0,0,0,.5);
-  @media screen and (min-width: $break-medium) {
-    flex-direction: row;
-    margin-top: 15%;
-    font-size: 20px
+  margin: 0 auto;
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
+  @media (min-width: $break-medium) {
+    display: flex;
   }
+}
+
+.img-div {
+  width: 80%;
+  margin: 10px auto;
+
+  #face-pic {
+    width: 100%;
+    border-radius: 100%;
+    margin-top: 15px;
+  }
+}
+
+
+.soc-link {
+  max-width: 50px;
 }
 
 .l-col {
-  padding: 10px;
-  @media screen and (min-width: $break-medium) {
-    flex: 1;
-  }
-  @media screen and (min-width: $break-large) {
-    flex: 2;
-  }
+  margin: 0 auto;
 }
 
 .r-col {
-  padding: 0 10px 20px;
-  @media screen and (min-width: $break-medium) {
-    flex: 3;
-    padding: 20px 10px 20px;
-  }
-  @media screen and (min-width: $break-large) {
-    flex: 4
-  }
-
-  p {
-    padding: 0 10px;
-  }
+  padding: 15px;
 
   h2 {
-    margin: 5px auto;
-    padding: 0 10px;
-    a {
-      padding-left: 25px;
-    }
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
   }
-}
-
-#face-pic {
-  border-radius: 100%;
-  width: 100%;
-}
-
-.soc-link {
-  width: 40px;
-  margin-right: 2.5%;
-  padding-top: 10px;
-  margin: 0 auto;
 }

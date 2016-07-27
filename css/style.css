@@ -1,14 +1,15 @@
 html {
-  font-size: 20px;
   font: 100% Lato, sans-serif;
-  color: white;
-  background-image: url("../img/moon_landing_portrait.png");
-  background-color: rgba(0, 0, 0, 0.25);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media screen and (min-width: 768px) {
+  background: url("../img/moonprint_land.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (min-width: 512px) {
     html {
-      background-image: url("../img/moon_landing.png"); } }
+      background-color: red; } }
+  @media (min-width: 768px) {
+    html {
+      background-color: blue; } }
 
 a {
   text-decoration: none;
@@ -17,52 +18,38 @@ a {
 a:hover {
   color: white; }
 
+p {
+  font-size: 22px; }
+
 .content {
-  font-size: 20px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5); }
-  @media screen and (min-width: 512px) {
+  margin: 0 auto;
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5); }
+  @media (min-width: 512px) {
     .content {
-      flex-direction: row;
-      margin-top: 15%;
-      font-size: 20px; } }
+      display: flex; } }
 
-.l-col {
-  padding: 10px; }
-  @media screen and (min-width: 512px) {
-    .l-col {
-      flex: 1; } }
-  @media screen and (min-width: 768px) {
-    .l-col {
-      flex: 2; } }
-
-.r-col {
-  padding: 0 10px 20px; }
-  @media screen and (min-width: 512px) {
-    .r-col {
-      flex: 3;
-      padding: 20px 10px 20px; } }
-  @media screen and (min-width: 768px) {
-    .r-col {
-      flex: 4; } }
-  .r-col p {
-    padding: 0 10px; }
-  .r-col h2 {
-    margin: 5px auto;
-    padding: 0 10px; }
-    .r-col h2 a {
-      padding-left: 25px; }
-
-#face-pic {
-  border-radius: 100%;
-  width: 100%; }
+.img-div {
+  width: 80%;
+  margin: 10px auto; }
+  .img-div #face-pic {
+    width: 100%;
+    border-radius: 100%;
+    margin-top: 15px; }
 
 .soc-link {
-  width: 40px;
-  margin-right: 2.5%;
-  padding-top: 10px;
+  max-width: 50px; }
+
+.l-col {
   margin: 0 auto; }
+
+.r-col {
+  padding: 15px; }
+  .r-col h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
