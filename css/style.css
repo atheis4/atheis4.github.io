@@ -34,6 +34,9 @@ a:hover {
   @media screen and (min-width: 512px) {
     .l-col {
       flex: 1; } }
+  @media screen and (min-width: 768px) {
+    .l-col {
+      flex: 2; } }
 
 .r-col {
   padding: 0 10px 20px; }
@@ -41,6 +44,9 @@ a:hover {
     .r-col {
       flex: 3;
       padding: 20px 10px 20px; } }
+  @media screen and (min-width: 768px) {
+    .r-col {
+      flex: 4; } }
   .r-col p {
     padding: 0 10px; }
   .r-col h2 {
