@@ -1,25 +1,16 @@
 html {
   font: 100% Lato, sans-serif;
-  background: url("../img/moonprint_land.png");
+  background: url("../img/moonprint_square.png");
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
   @media (min-width: 512px) {
     html {
       background-color: red; } }
   @media (min-width: 768px) {
     html {
       background-color: blue; } }
-
-a {
-  text-decoration: none;
-  color: orange; }
-
-a:hover {
-  color: white; }
-
-p {
-  font-size: 22px; }
 
 .content {
   margin: 0 auto;
@@ -29,27 +20,63 @@ p {
   box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5); }
   @media (min-width: 512px) {
     .content {
-      display: flex; } }
-
-.img-div {
-  width: 80%;
-  margin: 10px auto; }
-  .img-div #face-pic {
-    width: 100%;
-    border-radius: 100%;
-    margin-top: 15px; }
+      display: flex;
+      justify-content: space-around;
+      margin-top: 125px; } }
 
 .soc-link {
-  max-width: 50px; }
+  max-width: 50px;
+  margin: 0 20px; }
 
 .l-col {
   margin: 0 auto; }
+  .l-col .img-div {
+    width: 80%;
+    margin: 10px auto; }
+    @media (min-width: 512px) {
+      .l-col .img-div {
+        line-height: 275px; } }
+    @media (min-width: 768px) {
+      .l-col .img-div {
+        width: 70%;
+        margin: 20px 0 20px 75px; } }
+    .l-col .img-div #face-pic {
+      width: 100%;
+      border-radius: 100%;
+      margin-top: 15px; }
+      @media (min-width: 512px) {
+        .l-col .img-div #face-pic {
+          margin: auto 0;
+          vertical-align: middle; } }
+  @media (min-width: 512px) {
+    .l-col {
+      flex: 3; } }
 
 .r-col {
   padding: 15px; }
+  .r-col a {
+    text-decoration: none;
+    color: orange; }
+  .r-col a:hover {
+    color: white; }
+  .r-col p {
+    font-size: 22px; }
+    @media (min-width: 512px) {
+      .r-col p {
+        font-size: 20px;
+        padding-right: 40px; } }
   .r-col h2 {
     font-size: 30px;
     text-align: center;
     margin: 0 auto; }
+    @media (min-width: 512px) {
+      .r-col h2 {
+        text-align: left; } }
+  @media (min-width: 512px) {
+    .r-col {
+      flex: 5; } }
+  @media (min-width: 768px) {
+    .r-col {
+      line-height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

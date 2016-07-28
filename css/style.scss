@@ -4,29 +4,17 @@ $break-large: 768px;
 
 html {
   font: 100% $font-stack;
-  background: url('../img/moonprint_land.png');
+  background: url('../img/moonprint_square.png');
   background-color: rgba(0,0,0,0.5);
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   @media (min-width: $break-medium) {
     background-color: red;
   }
   @media (min-width: $break-large) {
     background-color: blue;
   }
-}
-
-a {
-  text-decoration: none;
-  color: orange;
-}
-
-a:hover{
-  color: white;
-}
-
-p {
-  font-size: 22px;
 }
 
 .content {
@@ -37,35 +25,85 @@ p {
   box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
   @media (min-width: $break-medium) {
     display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
   }
 }
-
-.img-div {
-  width: 80%;
-  margin: 10px auto;
-
-  #face-pic {
-    width: 100%;
-    border-radius: 100%;
-    margin-top: 15px;
-  }
-}
-
 
 .soc-link {
   max-width: 50px;
+  margin: 0 20px;
 }
 
 .l-col {
   margin: 0 auto;
+
+  .img-div {
+    width: 80%;
+    margin: 10px auto;
+
+    @media (min-width: $break-medium) {
+      line-height: 275px;
+    }
+
+    @media (min-width: $break-large) {
+      width: 70%;
+      margin: 20px 0 20px 75px;
+    }
+
+    #face-pic {
+      width: 100%;
+      border-radius: 100%;
+      margin-top: 15px;
+
+      @media (min-width: $break-medium) {
+        margin: auto 0;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  @media (min-width: $break-medium) {
+    flex: 3;
+  }
 }
 
 .r-col {
   padding: 15px;
 
+  a {
+    text-decoration: none;
+    color: orange;
+  }
+
+  a:hover{
+    color: white;
+  }
+
+  p {
+    font-size: 22px;
+
+    @media (min-width: $break-medium) {
+      font-size: 20px;
+      padding-right: 40px;
+    }
+  }
+
   h2 {
     font-size: 30px;
     text-align: center;
     margin: 0 auto;
+
+    @media (min-width: $break-medium) {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $break-medium) {
+    flex: 5;
+  }
+
+  @media (min-width: $break-large) {
+    line-height: 40px;
   }
 }
