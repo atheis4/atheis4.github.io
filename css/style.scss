@@ -1,6 +1,6 @@
 $font-stack: Lato, sans-serif;
 $break-medium: 512px;
-$break-large: 768px;
+$break-large: 1024px;
 
 html {
   font: 100% $font-stack;
@@ -96,6 +96,7 @@ html {
 
     @media (min-width: $break-medium) {
       text-align: left;
+      font-size: 36px;
     }
   }
 

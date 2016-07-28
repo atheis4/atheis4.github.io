@@ -31,7 +31,7 @@ html {
     @media (min-width: 512px) {
       .l-col .img-div {
         line-height: 275px; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .l-col .img-div {
         width: 70%;
         margin: 20px 0 20px 75px; } }
@@ -60,7 +60,7 @@ html {
       .r-col p {
         font-size: 20px;
         padding-right: 40px; } }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .r-col p {
         font-size: 24px; } }
   .r-col h2 {
@@ -69,11 +69,12 @@ html {
     margin: 0 auto; }
     @media (min-width: 512px) {
       .r-col h2 {
-        text-align: left; } }
+        text-align: left;
+        font-size: 36px; } }
   @media (min-width: 512px) {
     .r-col {
       flex: 5; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .r-col {
       line-height: 40px; } }
 
