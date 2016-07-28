@@ -4,7 +4,8 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; }
+  background-attachment: scroll;
+  background-size: cover; }
 
 .content {
   margin: 0 auto;
@@ -59,6 +60,9 @@ html {
       .r-col p {
         font-size: 20px;
         padding-right: 40px; } }
+    @media (min-width: 768px) {
+      .r-col p {
+        font-size: 24px; } }
   .r-col h2 {
     font-size: 30px;
     text-align: center;
