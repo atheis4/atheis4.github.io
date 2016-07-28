@@ -9,12 +9,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  @media (min-width: $break-medium) {
-    background-color: red;
-  }
-  @media (min-width: $break-large) {
-    background-color: blue;
-  }
 }
 
 .content {
