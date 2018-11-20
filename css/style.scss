@@ -1,31 +1,28 @@
-$font-stack: Lato, sans-serif;
-$break-medium: 512px;
-$break-large: 1024px;
-
 html {
-  font: 100% $font-stack;
-  background: url('../img/moonprint_square.png');
-  background-color: rgba(0,0,0,0.5);
+  font: 100% Lato, sans-serif;
+  background: url("../img/moonprint_square.png");
+  background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .content {
   margin: 0 auto;
   color: white;
-  -webkit-box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
-  -moz-box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
-  box-shadow: inset 0px 0px 157px 1000px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 157px 1000px rgba(0, 0, 0, 0.5);
+}
 
-  @media (min-width: $break-medium) {
+@media (min-width: 512px) {
+  .content {
     display: flex;
     justify-content: space-around;
     margin-top: 125px;
   }
 }
-
 .soc-link {
   max-width: 50px;
   margin: 0 20px;
@@ -33,78 +30,91 @@ html {
 
 .l-col {
   margin: 0 auto;
+}
 
-  .img-div {
-    width: 80%;
-    margin: 10px auto;
+.l-col .img-div {
+  width: 80%;
+  margin: 10px auto;
+}
 
-    @media (min-width: $break-medium) {
-      line-height: 275px;
-    }
-
-    @media (min-width: $break-large) {
-      width: 70%;
-      margin: 20px 0 20px 75px;
-    }
-
-    #face-pic {
-      width: 100%;
-      border-radius: 100%;
-      margin-top: 15px;
-
-      @media (min-width: $break-medium) {
-        margin: auto 0;
-        vertical-align: middle;
-      }
-    }
+@media (min-width: 512px) {
+  .l-col .img-div {
+    line-height: 275px;
   }
+}
+@media (min-width: 1024px) {
+  .l-col .img-div {
+    width: 70%;
+    margin: 20px 0 20px 75px;
+  }
+}
+.l-col .img-div #face-pic {
+  width: 100%;
+  border-radius: 100%;
+  margin-top: 15px;
+}
 
-  @media (min-width: $break-medium) {
+@media (min-width: 512px) {
+  .l-col .img-div #face-pic {
+    margin: auto 0;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 512px) {
+  .l-col {
     flex: 3;
   }
 }
-
 .r-col {
   padding: 15px;
+}
 
-  a {
-    text-decoration: none;
-    color: orange;
+.r-col a {
+  text-decoration: none;
+  color: orange;
+}
+
+.r-col a:hover {
+  color: white;
+}
+
+.r-col p {
+  font-size: 22px;
+}
+
+@media (min-width: 512px) {
+  .r-col p {
+    font-size: 20px;
+    padding-right: 40px;
   }
-
-  a:hover{
-    color: white;
+}
+@media (min-width: 1024px) {
+  .r-col p {
+    font-size: 24px;
   }
+}
+.r-col h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
 
-  p {
-    font-size: 22px;
-
-    @media (min-width: $break-medium) {
-      font-size: 20px;
-      padding-right: 40px;
-    }
-
-    @media (min-width: $break-large) {
-      font-size: 24px;
-    }
+@media (min-width: 512px) {
+  .r-col h2 {
+    text-align: left;
+    font-size: 36px;
   }
-
-  h2 {
-    font-size: 30px;
-    text-align: center;
-    margin: 0 auto;
-
-    @media (min-width: $break-medium) {
-      text-align: left;
-      font-size: 36px;
-    }
-  }
-
-  @media (min-width: $break-medium) {
+}
+@media (min-width: 512px) {
+  .r-col {
     flex: 5;
   }
-
-  @media (min-width: $break-large) {
+}
+@media (min-width: 1024px) {
+  .r-col {
     line-height: 40px;
   }
 }
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */
