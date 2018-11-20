@@ -61,7 +61,7 @@ html {
     color: white; }
   .r-col p {
     font-size: 12px;
-    line-height: 10px; }
+    line-height: 16px; }
     @media (min-width: 512px) {
       .r-col p {
         font-size: 16px;
@@ -74,6 +74,8 @@ html {
         font-size: 20px; } }
   .r-col .text-link {
     padding-right: 5px;
+    font-size: 16px;
+    padding-bottom: 10px;
   }
   .r-col h2 {
     font-size: 30px;
