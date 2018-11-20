@@ -84,6 +84,7 @@ html {
 
 .r-col p {
   font-size: 12px;
+  line-height: 10px;
 }
 
 @media (min-width: 512px) {
@@ -102,6 +103,10 @@ html {
     font-size: 20px;
   }
 }
+.r-col .text-link {
+  padding-right: 5px;
+}
+
 .r-col h2 {
   font-size: 30px;
   text-align: center;
