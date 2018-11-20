@@ -2,8 +2,9 @@ html {
   font: 100% Lato, sans-serif;
   background: url("../img/moonprint_square.png");
   background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 90%;
 }
 
 .content {
@@ -77,7 +78,7 @@ html {
 }
 
 .r-col p {
-  font-size: 22px;
+  font-size: 12px;
 }
 
 @media (min-width: 512px) {
